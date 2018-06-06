@@ -28,11 +28,6 @@ You will need the following things properly installed on your computer.
 
 Make use of the many generators for code, try `ember help generate` for more details
 
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
 ### Linting
 
 * `npm run lint:js`
@@ -54,3 +49,12 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+
+#Consideraciones adicionales
+
+- El proyecto lo realicé usando ember-cli: 3.1.4 y node: 8.11.1
+- Omití algunos recursos (imagenes) para implementarlas manualmente con html y css para un mejor comportamiento
+- Añadí secciones de galeria y Mapa para completar las secciones que tenia el header
+- Al formulario de contacto le agregué persistencia de datos haciendo uso de firebase
+- Añadí una sección nueva “Lista de contactos” la cual lista todos los contactos que se han guardado
