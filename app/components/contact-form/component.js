@@ -1,10 +1,11 @@
 import Component from '@ember/component';
 import { match } from '@ember/object/computed';
+import { inject as service } from '@ember/service';
 
 export default Component.extend({
 	classNames: ["contact-form"],
 	isValidEmail: match('email', /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/),
-
+	store: service(),
 	actions: {
 		submitForm() {
 			const { name, email, phone, city, comment } = this;
@@ -47,11 +48,25 @@ export default Component.extend({
 					'error'
 				);
 			}
-			return swal(
-				'Exito!',
-				'Datos enviados con exito',
-				'success'
-			);
+			this.get("store").createRecord("contact",{
+				name,
+				email,
+				phone,
+				city,
+				comment
+			}).save().then(()=>{
+				return swal(
+					'Exito!',
+					'Datos enviados con exito',
+					'success'
+				);
+			}).catch(() => {
+				return swal(
+					'Error!',
+					'Ha ocurrido un error enviando los datos',
+					'error'
+				);
+			})
 		},
 	}
 });

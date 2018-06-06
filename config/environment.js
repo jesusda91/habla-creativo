@@ -5,7 +5,15 @@ module.exports = function(environment) {
     modulePrefix: 'habla-creativo',
     environment,
     rootURL: '/',
-    locationType: 'auto',
+	locationType: 'auto',
+	firebase: {
+		apiKey: "AIzaSyBBpF4qMI3oSjJD0iQ_s00BIsHd_FIj1cM",
+		authDomain: "habla-creativo.firebaseapp.com",
+		databaseURL: "https://habla-creativo.firebaseio.com",
+		projectId: "habla-creativo",
+		storageBucket: "habla-creativo.appspot.com",
+		messagingSenderId: "797073949088"
+	},
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

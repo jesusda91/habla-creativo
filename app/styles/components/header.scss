@@ -10,6 +10,18 @@
 			fill: white;
 		}
 	}
+	a:not(.navbar-brand) {
+		color: white;
+		text-decoration: none;
+		display: block;
+		padding: 1em;
+		&:hover {
+			color: white;
+			text-decoration: none;
+			background-color: rgba($color: #DDD, $alpha: 0.1);
+			border-radius: .375rem;
+		}
+	}
 	ul {
 		margin: 0;
 		padding-top: 4em;
@@ -18,7 +30,6 @@
 		justify-content: center;
 		li {
 			list-style: none;
-			padding: 1em;
 			cursor: pointer;
 			&.separator {
 				cursor: default;
