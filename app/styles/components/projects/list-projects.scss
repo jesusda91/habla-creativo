@@ -1,0 +1,15 @@
+.list-projects {
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 1em;
+	max-width: 1176px;
+	li {
+		list-style: none;
+	}
+	.project-card {
+		margin: .375rem;
+	}
+}
+

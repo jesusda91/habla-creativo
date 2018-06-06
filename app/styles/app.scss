@@ -1,4 +1,66 @@
-*{
-  box-sizing: border-box;
-  outline: none;
+@import 'fonts';
+@import 'colors';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/contact-form';
+@import 'components/projects/title-section';
+@import 'components/projects/list-projects';
+
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+body{
+	font-size: 14px;
+	font-family: $PTRegular;
+	background-color: bisque;
+}
+
+.ctn-projects, .ctn-form-section {
+	padding: 56px;
+}
+
+.ctn-form-section {
+	background-image: url("/assets/images/Remanso-40.png");
+	background-size: cover;
+	background-position: center 10%;
+	background-color: red;
+	height: calc(100vh - 50px);
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.box-form {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.ctn-projects {
+	font-family: $BRegular;
+	font-size: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	.bold {
+		font-family: $BMedium;
+	}
+}
+
+#map {
+	display: flex;
+	iframe {
+		width: 100%;
+	}
+}
+
+.btn-brown {
+	background-color: $brown;
+	color: white;
+	&:hover {
+		background-color: darken($brown, 3%);
+	}
 }

@@ -1,0 +1,41 @@
+.footer {
+	background-image: url("/assets/images/Remanso-36.png");
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 56px;
+	h2 {
+		font-family: $BBold;
+		color: $brown;
+		margin-bottom: 2rem;
+	}
+	ul {
+		margin: 0;
+		display: flex;
+		p {
+			margin: 0;
+		}
+		li {
+			list-style: none;
+			text-align: center;
+			margin: .5em 1em;
+			img {
+				width: 70px;
+			}
+			.title {
+				font-family: $PTBold;
+			}
+			.subtitle {
+				font-family: $PTRegular;
+				font-size: 14px;
+			}
+		}
+	}
+	.warning-txt {
+		text-align: center;
+		font-size: 12px;
+		margin-top: 2em;
+		max-width: 1050px;
+	}
+}

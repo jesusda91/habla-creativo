@@ -1,0 +1,7 @@
+{{#each projects as |project|}}
+<li>
+	<img src={{concat "/assets/images/" project.image}} alt="" class="project-card">
+</li>
+{{/each}}
+
+{{yield}}

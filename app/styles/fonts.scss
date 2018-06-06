@@ -1,0 +1,68 @@
+$pathFonts: 'fonts/';
+
+@font-face {
+	font-family: 'BebasNeueMedium';
+	src: url($pathFonts + 'BebasNeue.otf') format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BebasNeueBold';
+	src: url($pathFonts + 'BebasNeueBold.otf') format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BebasNeueBook';
+	src: url($pathFonts + 'BebasNeueBook.otf') format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BebasNeueLight';
+	src: url($pathFonts + 'BebasNeueLight.otf') format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BebasNeueRegular';
+	src: url($pathFonts + 'BebasNeueRegular.otf') format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BebasNeueThin';
+	src: url($pathFonts + 'BebasNeueThin.otf') format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'PTSansBold';
+	src: url($pathFonts + 'PTN77F.ttf') format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTSansRegular';
+	src: url($pathFonts + 'PTSans.ttc') format("OpenType");
+	font-weight: normal;
+	font-style: normal;
+}
+
+$BMedium: BebasNeueMedium;
+$BBold: BebasNeueBold;
+$BBook: BebasNeueBook;
+$BLight: BebasNeueLight;
+$BRegular: BebasNeueRegular;
+$BThin: BebasNeueThin;
+
+$PTBold: PTSansBold;
+$PTRegular: PTSansRegular;

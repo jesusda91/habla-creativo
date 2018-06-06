@@ -1,0 +1,38 @@
+.ctn-projects {
+	.title {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		.area-txt, .price-txt, .delivery-txt {
+			text-transform: uppercase;
+			margin: .1rem;
+		}
+		.area-txt {
+			color: $yellow;
+			display: flex;
+			align-items: center;
+			.bold {
+				font-size: 1.15em;
+			}
+			.bolder {
+				font-size: 1.8em;
+				font-family: $BBold;
+				line-height: 1;
+			}
+		}
+		.price-txt {
+			color: $orange;
+			font-size: 2em;
+			.bold {
+				color: $brown;
+				font-family: $BBold;
+			}
+		}
+		.delivery-txt {
+			background-color: $orange;
+			color: white;
+			padding: .375rem 1.5rem;
+		}
+	}
+}

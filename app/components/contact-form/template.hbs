@@ -1,0 +1,17 @@
+<h3 class="title">
+	¡Déjanos tus datos y te <span class="bold">mantendremos informado!</span>
+</h3>
+<form>
+	{{input type="text" placeholder="Nombre*" value=name}}
+	{{input type="text" placeholder="Correo Electrónico" value=email}}
+	{{input type="text" placeholder="Teléfono" value=phone}}
+	{{input type="text" placeholder="Ciudad" value=city}}
+	{{textarea placeholder="Comentario*" value=comment}}
+	<p class="terms">
+		Al hacer clic en enviar, estás aceptando los <span class="bold">términos y condiciones</span>
+	</p>
+	<button class="btn btn-brown">
+		Enviar
+	</button>
+</form>
+{{yield}}
