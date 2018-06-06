@@ -51,7 +51,7 @@ Specify what it takes to deploy your app.
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
 
-#Consideraciones adicionales
+# Consideraciones adicionales
 
 - El proyecto lo realicé usando ember-cli: 3.1.4 y node: 8.11.1
 - Omití algunos recursos (imagenes) para implementarlas manualmente con html y css para un mejor comportamiento
