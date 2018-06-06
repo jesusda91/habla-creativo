@@ -24,17 +24,18 @@ body{
 }
 
 .ctn-form-section {
+	padding-top: 128px;
 	background-image: url("/assets/images/Remanso-40.png");
 	background-size: cover;
 	background-position: center 10%;
-	height: calc(100vh - 50px);
+	min-height: 100vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	.box-form {
-		display: flex;
-		flex-wrap: wrap;
+	.box-form img {
+		width: 100%;
+		max-width: 420px;
 	}
 }
 
@@ -63,5 +64,38 @@ body{
 	color: white;
 	&:hover {
 		background-color: darken($brown, 3%);
+	}
+}
+
+@media (min-width: 992px) {
+	.ctn-form-section {
+		.box-form {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			img {
+				width: auto;
+			}
+		}
+	}
+}
+
+@media (min-width: 1005px) {
+	.ctn-form-section {
+		.box-form {
+			img {
+				max-width: none;
+			}
+		}
+	}
+}
+
+@media (min-width: 426px) {
+	.ctn-form-section {
+		.box-form {
+			img {
+
+			}
+		}
 	}
 }

@@ -1,26 +1,32 @@
 export default [
 	{
-		id: 1,
-		image: "Remanso-21.png"
+		src: "/assets/images/Remanso-21.png",
+		w: 684,
+		h: 598,
 	},
 	{
-		id: 2,
-		image: "Remanso-22.png"
+		src: "/assets/images/Remanso-22.png",
+		w: 684,
+		h: 598,
 	},
 	{
-		id: 3,
-		image: "Remanso-23.png"
+		src: "/assets/images/Remanso-23.png",
+		w: 684,
+		h: 598,
 	},
 	{
-		id: 4,
-		image: "Remanso-24.png"
+		src: "/assets/images/Remanso-24.png",
+		w: 684,
+		h: 598,
 	},
 	{
-		id: 5,
-		image: "Remanso-25.png"
+		src: "/assets/images/Remanso-25.png",
+		w: 684,
+		h: 598,
 	},
 	{
-		id: 6,
-		image: "Remanso-26.png"
+		src: "/assets/images/Remanso-26.png",
+		w: 684,
+		h: 598,
 	},
 ]

@@ -1,7 +1,11 @@
-{{#each projects as |project|}}
-<li>
-	<img src={{concat "/assets/images/" project.image}} alt="" class="project-card">
-</li>
-{{/each}}
+{{#photo-swipe items=projects history=false as |photoswipe|}}
+	<div class="ctn-cards">
+		{{#each projects as |project|}}
+		<li>
+			<img src={{project.src}} {{action photoswipe.actions.open (hash index=index)}} class="project-card">
+		</li>
+		{{/each}}
+	</div>
+{{/photo-swipe}}
 
 {{yield}}

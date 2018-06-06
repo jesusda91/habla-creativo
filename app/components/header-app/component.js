@@ -2,7 +2,7 @@ import Component from '@ember/component';
 import $ from 'jquery';
 
 export default Component.extend({
-	classNames: ["header"],
+	classNames: ["header", "navbar", "navbar-expand-lg", "fixed-top"],
 	tagName: "header",
 
 	actions: {

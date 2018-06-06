@@ -1,16 +1,26 @@
-<ul>
-	<li>
-		<img src="/assets/images/Remanso-05.png" alt="Remanso del rodeo apartamentos" class="logo">
-	</li>
-	<li {{action "scrollTo" ".ctn-form-section"}}>Proyecto</li>
-	<li class="spacer">|</li>
-	<li {{action "scrollTo" ".image-gallery"}}>Galeria</li>
-	<li class="spacer">|</li>
-	<li {{action "scrollTo" ".ctn-projects"}}>Apartamentos</li>
-	<li class="spacer">|</li>
-	<li {{action "scrollTo" "#map"}}>Mapa</li>
-	<li class="spacer">|</li>
-	<li {{action "scrollTo" "footer"}}>Contacto</li>
-</ul>
-
+<a class="navbar-brand" href="#">
+	<img src="/assets/images/Remanso-05.png" alt="Remanso del rodeo apartamentos" class="logo">
+</a>
+<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+</button>
+<div class="navbar-collapse collapse justify-content-center" id="navbarCollapse" style="">
+	<ul class="navbar-nav">
+		<li class="spacer"></li>
+		<li class="d-none d-lg-block d-xl-block" {{action "scrollTo" ".ctn-form-section"}}>Proyecto</li>
+		<li class="d-lg-none d-xl-none" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" {{action "scrollTo" ".ctn-form-section"}}>Proyecto</li>
+		<li class="separator">|</li>
+		<li class="d-none d-lg-block d-xl-block" {{action "scrollTo" ".image-gallery"}}>Galeria</li>
+		<li class="d-lg-none d-xl-none" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" {{action "scrollTo" ".image-gallery"}}>Galeria</li>
+		<li class="separator">|</li>
+		<li class="d-none d-lg-block d-xl-block" {{action "scrollTo" ".ctn-projects"}}>Apartamentos</li>
+		<li class="d-lg-none d-xl-none" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" {{action "scrollTo" ".ctn-projects"}}>Apartamentos</li>
+		<li class="separator">|</li>
+		<li class="d-none d-lg-block d-xl-block" {{action "scrollTo" "#map"}}>Mapa</li>
+		<li class="d-lg-none d-xl-none" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" {{action "scrollTo" "#map"}}>Mapa</li>
+		<li class="separator">|</li>
+		<li class="d-none d-lg-block d-xl-block" {{action "scrollTo" "footer"}}>Contacto</li>
+		<li class="d-lg-none d-xl-none" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" {{action "scrollTo" "footer"}}>Contacto</li>
+	</ul>
+</div>
 {{yield}}

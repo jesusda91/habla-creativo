@@ -12,6 +12,8 @@
 			color: $yellow;
 			display: flex;
 			align-items: center;
+			flex-wrap: wrap;
+			justify-content: center;
 			.bold {
 				font-size: 1.15em;
 			}
