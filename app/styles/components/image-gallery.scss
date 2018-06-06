@@ -1,0 +1,32 @@
+.image-gallery {
+	padding: 3em;
+	h2 {
+		font-family: $BBold;
+		color: $brown;
+		font-size: 2.5em;
+		text-align: center;
+	}
+	.ctn-images {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: auto;
+		img {
+			height: 120px;
+			margin: .5em;
+			cursor: pointer;
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1855px) {
+	.image-gallery {
+		.ctn-images {
+			max-width: 1560px;
+		}
+	}
+}

@@ -1,0 +1,12 @@
+<h2>Galeria</h2>
+
+{{#photo-swipe items=gallery history=false as |photoswipe|}}
+	<div class="ctn-images">
+		{{#each gallery as |item index|}}
+			<img src={{item.src}} {{action photoswipe.actions.open (hash index=index)}} class={{concat "grid-item " item.class}}/>
+		{{/each}}
+	</div>
+{{/photo-swipe}}
+
+
+{{yield}}
