@@ -4,7 +4,7 @@ import { inject as service } from '@ember/service';
 
 export default Component.extend({
 	classNames: ["contact-form"],
-	isValidEmail: match('email', /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/),
+	isValidEmail: match('email', /^([a-z0-9_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/),
 	store: service(),
 	actions: {
 		submitForm() {
@@ -35,18 +35,10 @@ export default Component.extend({
 				if (errors>1) {
 					error = 'Todos los campos son requeridos';
 				}
-				return swal(
-					'Error!',
-					error,
-					'error'
-				);
+				return window.swal('Error!',error,'error');
 			}
 			if (!this.get("isValidEmail")) {
-				return swal(
-					'Error!',
-					'Correo Electrónico no válido',
-					'error'
-				);
+				return window.swal('Error!','Correo Electrónico no válido','error');
 			}
 			this.get("store").createRecord("contact",{
 				name,
@@ -55,18 +47,14 @@ export default Component.extend({
 				city,
 				comment
 			}).save().then(()=>{
-				return swal(
-					'Exito!',
-					'Datos enviados con exito',
-					'success'
-				);
+				return window.swal('Exito!','Datos enviados con exito','success');
 			}).catch(() => {
-				return swal(
+				return window.swal(
 					'Error!',
 					'Ha ocurrido un error enviando los datos',
 					'error'
 				);
-			})
+			});
 		},
 	}
 });
