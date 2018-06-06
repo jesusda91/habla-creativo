@@ -19,7 +19,11 @@
 		p {
 			margin: 0;
 		}
+		a {
+			color: $brown;
+		}
 		li {
+			color: $brown;
 			list-style: none;
 			text-align: center;
 			margin: .5em 1em;
